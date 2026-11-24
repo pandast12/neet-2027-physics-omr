@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#123b32">
+<title>NEET 2027 Physics – Digital OMR</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top"><div class="brand">NEET 2027 <span>PHYSICS</span></div><div class="sub">MODULE 1 · DIGITAL OMR PRACTICE TEST</div></header>
+<main>
+<section class="intro">
+<h1>Physics Module 1</h1>
+<p>45 multiple-choice questions · 180 marks · Suggested time: 60 minutes</p>
+<div class="fields"><label>Student name * <input id="studentName" type="text" placeholder="Enter your full name" required></label><label>Roll / ID * <input id="rollNo" type="text" placeholder="Enter your roll number" required></label></div>
+<div class="rules"><b>Marking:</b> +4 correct · −1 incorrect · 0 unanswered. Exam duration: 60 minutes. The timer starts only after you press Start Exam.</div>
+<div class="start-panel"><button id="startBtn" class="primary">Start Exam</button><div id="timerBox" class="timer" hidden>TIME LEFT: <strong id="timerText">60:00</strong></div><p id="timerNotice" class="small">Enter your name and roll number, then click Start Exam.</p></div>
+<div class="progress"><div><b id="progressText">0 / 45 answered</b><span id="progressPct">0%</span></div><div class="track"><i id="progressBar"></i></div></div>
+</section>
+<section id="questions" aria-label="Questions" hidden></section>
+<section class="submit-area" hidden><button id="submitBtn" class="primary">Submit Test &amp; View Score</button><button id="clearBtn" class="secondary">Clear All Answers</button><p class="small">You can change your choices any time before submitting.</p></section>
+<section id="result" class="result" hidden aria-live="polite"></section>
+</main>
+<footer>Original NCERT-based practice questions · Not an official NTA question paper</footer>
+<script src="app.js"></script>
+</body></html>
